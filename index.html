@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Hoopa Hangout | Arnold, CA Mountain Cabin Rental</title>
+  <meta name="description" content="The Hoopa Hangout — a 4-bedroom, 3-bath mountain retreat in Arnold, California that sleeps 11. Book direct for the best rate.">
+  <link rel="canonical" href="https://thehoopahangout.com/">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Hoopa Hangout | Arnold, CA">
+  <meta property="og:description" content="4 bedrooms · 3 baths · sleeps 11. Your basecamp for Big Trees, Bear Valley and the Sierra.">
+  <meta property="og:url" content="https://thehoopahangout.com/">
+  <meta property="og:image" content="https://thehoopahangout.com/assets/img/hero.jpg">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Structured data for Google (vacation rental) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VacationRental",
+    "name": "The Hoopa Hangout",
+    "url": "https://thehoopahangout.com/",
+    "image": "https://thehoopahangout.com/assets/img/hero.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Arnold",
+      "addressRegion": "CA",
+      "postalCode": "95223",
+      "addressCountry": "US"
+    },
+    "containsPlace": {
+      "@type": "Accommodation",
+      "numberOfBedrooms": 4,
+      "numberOfBathroomsTotal": 3,
+      "occupancy": { "@type": "QuantitativeValue", "maxValue": 11 }
+    }
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <nav class="nav container">
+    <a class="brand" href="#top">The Hoopa Hangout</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#stay">The Stay</a></li>
+      <li><a href="#gallery">Photos</a></li>
+      <li><a href="#amenities">Amenities</a></li>
+      <li><a href="#area">The Area</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a class="btn btn-small" href="#book">Book Direct</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="eyebrow">Arnold, California · Sierra Nevada</p>
+      <h1>Your basecamp in the pines.</h1>
+      <p class="hero-sub">4 bedrooms · 3 baths · sleeps 11</p>
+      <div class="hero-actions">
+        <a class="btn" href="#book">Check Availability</a>
+        <a class="btn btn-ghost" href="#gallery">See Photos</a>
+      </div>
+      <p class="hero-note">Book direct and skip the platform service fees.</p>
+    </div>
+  </section>
+
+  <!-- QUICK FACTS -->
+  <section class="facts container" aria-label="Property quick facts">
+    <div class="fact"><span class="fact-num">4</span><span class="fact-label">Bedrooms</span></div>
+    <div class="fact"><span class="fact-num">3</span><span class="fact-label">Bathrooms</span></div>
+    <div class="fact"><span class="fact-num">11</span><span class="fact-label">Guests</span></div>
+    <div class="fact"><span class="fact-num">4</span><span class="fact-label">Seasons of fun</span></div>
+  </section>
+
+  <!-- THE STAY -->
+  <section class="section container split" id="stay">
+    <div>
+      <p class="eyebrow">The Stay</p>
+      <h2>Room for the whole crew</h2>
+      <p>
+        Tucked among the cedars and sugar pines of Arnold, The Hoopa Hangout is built for
+        family reunions, ski weekends and friends' getaways. Four bedrooms and three full
+        bathrooms mean everyone gets their own space, and the open living areas bring you
+        back together for game nights, big dinners and slow mornings with coffee.
+      </p>
+      <p>
+        Spend the day hiking among giant sequoias, skiing at Bear Valley or paddling a mountain
+        lake, then come home to a warm, well-stocked cabin.
+      </p>
+      <!-- TODO: Replace with your own description from OwnerRez → Properties → Descriptions -->
+    </div>
+    <div class="split-img">
+      <img src="assets/img/living.jpg" alt="Living room at The Hoopa Hangout" loading="lazy" onerror="this.parentElement.classList.add('img-missing')">
+    </div>
+  </section>
+
+  <!-- SLEEPING ARRANGEMENTS -->
+  <section class="section container" id="rooms">
+    <p class="eyebrow">Sleeping Arrangements</p>
+    <h2>Where everyone sleeps</h2>
+    <!-- TODO: confirm bed types for each room -->
+    <div class="cards cards-4">
+      <article class="card"><h3>Bedroom 1</h3><p>King bed · en-suite bath</p></article>
+      <article class="card"><h3>Bedroom 2</h3><p>Queen bed</p></article>
+      <article class="card"><h3>Bedroom 3</h3><p>Queen bed</p></article>
+      <article class="card"><h3>Bedroom 4</h3><p>Bunk beds</p></article>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <p class="eyebrow">Photos</p>
+      <h2>Take a look around</h2>
+      <div class="gallery" id="gallery-grid"><!-- filled by main.js from SITE_CONFIG.gallery --></div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section class="section container" id="amenities">
+    <p class="eyebrow">Amenities</p>
+    <h2>Everything you need</h2>
+    <!-- TODO: trim or add to match the actual property -->
+    <ul class="amenities">
+      <li>Fast Wi-Fi</li>
+      <li>Fully equipped kitchen</li>
+      <li>Wood-burning fireplace</li>
+      <li>Large deck with BBQ</li>
+      <li>Smart TVs &amp; streaming</li>
+      <li>Washer &amp; dryer</li>
+      <li>Board games &amp; puzzles</li>
+      <li>Fresh linens &amp; towels</li>
+      <li>Free parking</li>
+      <li>Self check-in</li>
+      <li>Pack 'n play &amp; high chair</li>
+      <li>Coffee bar</li>
+    </ul>
+  </section>
+
+  <!-- BOOKING (OwnerRez) -->
+  <section class="section section-dark" id="book">
+    <div class="container">
+      <p class="eyebrow">Book Direct</p>
+      <h2>Check dates &amp; reserve</h2>
+      <p class="lead">Live availability and instant quotes, powered by OwnerRez. Secure checkout, no platform fees.</p>
+      <div class="booking-wrap">
+        <!-- The OwnerRez widget is injected here by main.js using SITE_CONFIG.ownerrez -->
+        <div id="ownerrez-booking" class="booking-widget"></div>
+      </div>
+      <p class="booking-alt">
+        Questions before you book? <a href="#contact">Send us a message</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section container" id="reviews">
+    <p class="eyebrow">Guest Reviews</p>
+    <h2>What guests are saying</h2>
+    <div id="ownerrez-reviews"><!-- Optional OwnerRez review widget, see SITE_CONFIG --></div>
+    <div class="cards cards-3" id="static-reviews"><!-- filled by main.js from SITE_CONFIG.reviews --></div>
+  </section>
+
+  <!-- AREA -->
+  <section class="section section-alt" id="area">
+    <div class="container">
+      <p class="eyebrow">The Area</p>
+      <h2>Arnold &amp; the Ebbetts Pass corridor</h2>
+      <div class="cards cards-3">
+        <article class="card">
+          <h3>Calaveras Big Trees</h3>
+          <p>Walk among ancient giant sequoias at Calaveras Big Trees State Park, just a short drive up Highway 4.</p>
+        </article>
+        <article class="card">
+          <h3>Bear Valley</h3>
+          <p>Skiing and snowboarding in winter, mountain biking and alpine lakes in summer.</p>
+        </article>
+        <article class="card">
+          <h3>Lakes &amp; Rivers</h3>
+          <p>Swim, paddle and fish at White Pines Lake, Lake Alpine and the Stanislaus River.</p>
+        </article>
+        <article class="card">
+          <h3>Murphys</h3>
+          <p>Wine tasting, restaurants and Gold Rush history on Main Street in Murphys.</p>
+        </article>
+        <article class="card">
+          <h3>Caves &amp; Caverns</h3>
+          <p>Tour Moaning Cavern and Mercer Caverns, or zipline over the canyon.</p>
+        </article>
+        <article class="card">
+          <h3>Town of Arnold</h3>
+          <p>Groceries, coffee, pizza and local shops are just minutes from the cabin.</p>
+        </article>
+      </div>
+      <!-- TODO: confirm drive times and add your own favorite spots -->
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section container" id="faq">
+    <p class="eyebrow">FAQ</p>
+    <h2>Good to know</h2>
+    <!-- TODO: confirm all policies match OwnerRez settings -->
+    <div class="faq">
+      <details><summary>What are check-in and check-out times?</summary><p>Check-in is at 4:00 PM and check-out is at 10:00 AM. Self check-in details are sent before your arrival.</p></details>
+      <details><summary>Are pets allowed?</summary><p>Please contact us about pets before booking.</p></details>
+      <details><summary>Do I need chains or 4WD in winter?</summary><p>Arnold gets real snow. From late fall through spring, carry chains or drive a 4WD/AWD vehicle with snow tires, and check Caltrans road conditions for Highway 4.</p></details>
+      <details><summary>Why book direct instead of Airbnb or VRBO?</summary><p>Booking direct skips the platform service fees, and you deal with us directly. Payments are processed securely through OwnerRez.</p></details>
+      <details><summary>What is the cancellation policy?</summary><p>The full cancellation policy is shown during checkout before you pay.</p></details>
+      <details><summary>Are events or parties allowed?</summary><p>No parties or events. Calaveras County quiet hours are observed.</p></details>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container narrow center">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in touch</h2>
+      <p>Have a question about dates, group size or the area? Use the inquiry option in the booking widget above, or reach us directly:</p>
+      <p class="contact-links" id="contact-links"><!-- filled by main.js from SITE_CONFIG.contact --></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> The Hoopa Hangout · Arnold, California</p>
+    <p><a href="#book">Book Direct</a> · <a href="#faq">FAQ</a> · <a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
